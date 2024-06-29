@@ -1,0 +1,52 @@
+header {
+  height: 80px;
+  background-color: #ddd;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.nav-logo {
+  font-size: 30px;
+}
+
+.nav-logo img {
+  height: 60px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.nav-link {
+  font-size: 25px;
+  color: black;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  font-size: 25px;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .nav-list {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger img {
+    width: 40px;
+  }
+}
